@@ -1,10 +1,14 @@
 void setup()
 {
+  size(300,300);
 	noLoop();
 }
 void draw()
 {
-	//your code here
+	background(0);
+    Die bob = new Die();
+    bob.show();
+
 }
 void mousePressed()
 {
@@ -20,10 +24,25 @@ class Die //models one single dice cube
 	}
 	void roll()
 	{
-		//your code here
+		if((int)(Math.random()*2) > 2)
+         ellipse(x,y,5,5) ;
+       else if((int)(Math.random()*3))
+       ellipse(x,y,5,5);
+       else if ((int)(Math.random())
+       ellipse(x,y,5,5);
+       else if((int)(Math.random())
+       ellipse(x,y,5,5)
+       else if ((int)(Math.random())
+       ellipse(x,y,5,5);
+       else
+       ellipse(x,y,5,5);
 	}
 	void show()
 	{
-		//your code here
+		for(int y= 1, y<=3;y++){
+  for(int x= 1;x<=6;x++){
+    ellipse(x,y,5,5);
+  }
+}
 	}
 }
