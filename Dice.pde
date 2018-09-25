@@ -17,10 +17,13 @@ void mousePressed()
 class Die //models one single dice cube
 {
 	//variable declarations here
-	
+	int numDice, myX, myY;
 	Die(int x, int y) //constructor
 	{
 		//variable initializations here
+    numDice = 9;
+    myX = x;
+    myY = y;
 	}
 	void roll()
 	{
