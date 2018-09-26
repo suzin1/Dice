@@ -6,7 +6,7 @@ void setup()
 void draw()
 {
 	background(0);
-    Die bob = new Die();
+    Die bob = new Die(50,50);
     bob.show();
 }
 void mousePressed()
@@ -20,7 +20,7 @@ class Die //models one single dice cube
 	Die(int x, int y) //constructor
 	{
 		//variable initializations here
-    numDice = (int)(Math.random()*7);
+    numDice = 9;
     myX = x;
     myY = y;
 	}
@@ -32,8 +32,8 @@ class Die //models one single dice cube
 	{
 		fill(255);
     rect(myX,myY,30,30);
-    fill(0);
-    if (roll = 1)
-      ellipse(myX,mY,10,10);
+    //fill(0);
+    //if (roll = 1)
+    //  ellipse(myX,mY,10,10);
 }
 }
