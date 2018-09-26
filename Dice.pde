@@ -8,7 +8,6 @@ void draw()
 	background(0);
     Die bob = new Die();
     bob.show();
-
 }
 void mousePressed()
 {
@@ -21,31 +20,20 @@ class Die //models one single dice cube
 	Die(int x, int y) //constructor
 	{
 		//variable initializations here
-    numDice = 9;
+    numDice = (int)(Math.random()*7);
     myX = x;
     myY = y;
 	}
 	void roll()
 	{
-		if((int)(Math.random()*2) > 2)
-         ellipse(x,y,5,5) ;
-       else if((int)(Math.random()*3))
-       ellipse(x,y,5,5);
-       else if ((int)(Math.random())
-       ellipse(x,y,5,5);
-       else if((int)(Math.random())
-       ellipse(x,y,5,5)
-       else if ((int)(Math.random())
-       ellipse(x,y,5,5);
-       else
-       ellipse(x,y,5,5);
+		int roll =(int)(Math.random()*7);
 	}
 	void show()
 	{
-		for(int y= 1, y<=3;y++){
-  for(int x= 1;x<=6;x++){
-    ellipse(x,y,5,5);
-  }
+		fill(255);
+    rect(myX,myY,30,30);
+    fill(0);
+    if (roll = 1)
+      ellipse(myX,mY,10,10);
 }
-	}
 }
