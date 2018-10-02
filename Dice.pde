@@ -25,13 +25,12 @@ class Die //models one single dice cube
 	Die(int x, int y) //constructor
 	{
 		//variable initializations here
-    numDice = 6;
     myX = x;
     myY = y;
 	}
 	void roll()
 	{
-		roll = (int)(Math.random()*6)+1;
+		numDice = (int)(Math.random()*6)+1;
 	}
 	void show()
 	{
@@ -39,32 +38,32 @@ class Die //models one single dice cube
     stroke(255);
     rect(myX,myY,50,50);
     fill(255);
-    if (roll <= 1)
+    if (numDice <= 1)
       ellipse(myX-25,myY-25,10,10);
-    if (roll <= 2){
+    if (numDice <= 2){
        ellipse(myX+12,myY-12,10,10);
        ellipse(myX-12,myY+12,10,10);
     }
-    if (roll <= 3){
+    if (numDice <= 3){
       ellipse(myX+12,myY-12,10,10);
       ellipse(myX-25,myY-25,10,10);
       ellipse(myX-12,myY+12,10,10);
     }
     
-    if (roll <= 4){
+    if (numDice <= 4){
       ellipse(myX+12,myY-12,10,10);
       ellipse(myX+37,myY-12,10,10);
       ellipse(myX-12,myY+12,10,10);
       ellipse(myX-37,myY+12,10,10);
     }
-    if (roll <= 5){
+    if (numDice <= 5){
       ellipse(myX+12,myY-12,10,10);
       ellipse(myX+37,myY-12,10,10);
       ellipse(myX-25,myY-25,10,10);
       ellipse(myX-12,myY+12,10,10);
       ellipse(myX-37,myY+12,10,10);
     }
-    if (roll <= 6){
+    if (numDice<= 6){
       ellipse(myX+12,myY-12,10,10);
       ellipse(myX+37,myY-12,10,10);
       ellipse(myX+37,myY-25,10,10);
