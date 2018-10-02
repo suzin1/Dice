@@ -25,20 +25,20 @@ class Die //models one single dice cube
 	Die(int x, int y) //constructor
 	{
 		//variable initializations here
-    numDice = (int)(Math.random()*7);
+    numDice = 6;
     myX = x;
     myY = y;
 	}
 	void roll()
 	{
-		roll = numDice;
+		roll = (int)(Math.random()*6)+1;
 	}
 	void show()
 	{
 		fill(0);
     stroke(255);
     rect(myX,myY,50,50);
-    fill(0);
+    fill(255);
     if (roll <= 1)
       ellipse(myX-25,myY-25,10,10);
     if (roll <= 2){
@@ -72,5 +72,6 @@ class Die //models one single dice cube
       ellipse(myX-12,myY+12,10,10);
       ellipse(myX-37,myY+12,10,10);
     }
+    text("Sum: "+ myY, 350,650);
 }
 }
