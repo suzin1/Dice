@@ -39,32 +39,32 @@ class Die //models one single dice cube
     stroke(255);
     rect(myX,myY,50,50);
     fill(0);
-    if (roll = 1)
+    if (roll <= 1)
       ellipse(myX-25,myY-25,10,10);
-    if (roll = 2){
+    if (roll <= 2){
        ellipse(myX+12,myY-12,10,10);
        ellipse(myX-12,myY+12,10,10);
     }
-    if (roll = 3){
+    if (roll <= 3){
       ellipse(myX+12,myY-12,10,10);
       ellipse(myX-25,myY-25,10,10);
       ellipse(myX-12,myY+12,10,10);
     }
     
-    if (roll = 4){
+    if (roll <= 4){
       ellipse(myX+12,myY-12,10,10);
       ellipse(myX+37,myY-12,10,10);
       ellipse(myX-12,myY+12,10,10);
       ellipse(myX-37,myY+12,10,10);
     }
-    if (roll = 5){
+    if (roll <= 5){
       ellipse(myX+12,myY-12,10,10);
       ellipse(myX+37,myY-12,10,10);
       ellipse(myX-25,myY-25,10,10);
       ellipse(myX-12,myY+12,10,10);
       ellipse(myX-37,myY+12,10,10);
     }
-    if (roll = 6){
+    if (roll <= 6){
       ellipse(myX+12,myY-12,10,10);
       ellipse(myX+37,myY-12,10,10);
       ellipse(myX+37,myY-25,10,10);
