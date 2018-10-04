@@ -40,9 +40,9 @@ class Die //models one single dice cube
     stroke(255);
     rect(myX,myY,50,50);
     fill(255);
-    if (numDice == 1)
+    if (numDice == 1){
       ellipse(myX-25,myY-25,10,10);
-      
+    }
     else if (numDice == 2){
        ellipse(myX+12,myY-12,10,10);
        ellipse(myX-12,myY+12,10,10);
@@ -73,7 +73,7 @@ class Die //models one single dice cube
       ellipse(myX-12,myY+12,10,10);
       ellipse(myX-37,myY+12,10,10);
     }
-  text("Sum: "+ numDice, 350,650);
+  text("Sum: "+ ((int)(Math.random()*200)+300), 350,650);
 }
 }
 
